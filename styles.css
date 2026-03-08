@@ -1723,6 +1723,10 @@ body {
         padding: 0 20px;
     }
 
+    .hero-scroll-indicator {
+        display: none;
+    }
+
     .hero-badge {
         font-size: 12px;
         padding: 6px 18px;
