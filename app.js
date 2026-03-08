@@ -538,6 +538,34 @@ function initScrollEffects() {
         el.classList.add('reveal');
         observer.observe(el);
     });
+
+    // Counter animation for stats
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.stat-number[data-count]');
+                counters.forEach(counter => {
+                    if (counter.dataset.animated) return;
+                    counter.dataset.animated = 'true';
+                    const target = parseInt(counter.dataset.count);
+                    const duration = 2000;
+                    const start = performance.now();
+                    const animate = (now) => {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        counter.textContent = Math.floor(eased * target) + '+';
+                        if (progress < 1) requestAnimationFrame(animate);
+                    };
+                    requestAnimationFrame(animate);
+                });
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) counterObserver.observe(statsEl);
 }
 
 // =====================================================
