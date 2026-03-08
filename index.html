@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המטבח של חני | אוכל ביתי באהבה</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">&#127869;</span>
+                <span class="logo-text">המטבח של חני</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">בית</a></li>
+                <li><a href="#about" class="nav-link">עלינו</a></li>
+                <li><a href="#menu" class="nav-link">תפריט</a></li>
+                <li><a href="#testimonials" class="nav-link">המלצות</a></li>
+                <li><a href="#contact" class="nav-link">צרו קשר</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" onclick="toggleCart()">
+                    <span class="cart-icon">&#128722;</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">&#11088; אוכל ביתי מוכן באהבה</div>
+            <h1 class="hero-title">
+                <span class="title-line">המטבח</span>
+                <span class="title-line highlight">של חני</span>
+            </h1>
+            <p class="hero-subtitle">טעמים של בית, מוגשים עד אליכם. כל מנה מוכנה בעבודת יד עם המרכיבים הטריים ביותר, בדיוק כמו שאמא הכינה.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary btn-lg">
+                    <span>&#127860;</span> לתפריט המלא
+                </a>
+                <a href="#about" class="btn btn-outline btn-lg">
+                    <span>&#9829;</span> הסיפור שלנו
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">לקוחות מרוצים</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">מנות במגוון</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">שנות ניסיון</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>גלול למטה</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&#128149; הסיפור שלנו</span>
+                <h2 class="section-title">מבשלים באהבה, מגישים בחיוך</h2>
+                <p class="section-desc">כל מנה שיוצאת מהמטבח שלנו היא תוצאה של מסורת, אהבה וחומרי גלם מהשורה הראשונה</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-card-icon">&#127857;</div>
+                    <h3>חומרי גלם טריים</h3>
+                    <p>אנחנו משתמשים רק בחומרי הגלם הטריים והאיכותיים ביותר. כל ירק, כל תבלין - הכל נבחר בקפידה.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">&#10084;&#65039;</div>
+                    <h3>בישול באהבה</h3>
+                    <p>כל מנה מוכנה בעבודת יד, עם אהבה ותשומת לב לכל פרט. בדיוק כמו שמבשלים בבית.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">&#128666;</div>
+                    <h3>משלוח עד הבית</h3>
+                    <p>מגיעים אליכם עד הדלת! אפשר גם לאסוף. תמיד טרי, תמיד בזמן, תמיד עם חיוך.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">&#128104;&#8205;&#127859;</div>
+                    <h3>מתכונים מסורתיים</h3>
+                    <p>המתכונים שלנו עוברים מדור לדור. טעמים שמחזירים אתכם הביתה עם כל ביס.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&#127869; התפריט שלנו</span>
+                <h2 class="section-title">מה מבשלים היום?</h2>
+                <p class="section-desc">בחרו מתוך המגוון העשיר שלנו - כל מנה מוכנה טרייה ובאהבה</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" onclick="filterMenu('all')">&#127775; הכל</button>
+                <button class="filter-btn" onclick="filterMenu('main')">&#127858; מנות עיקריות</button>
+                <button class="filter-btn" onclick="filterMenu('side')">&#129367; תוספות</button>
+                <button class="filter-btn" onclick="filterMenu('soup')">&#129379; מרקים</button>
+                <button class="filter-btn" onclick="filterMenu('salad')">&#129367; סלטים</button>
+                <button class="filter-btn" onclick="filterMenu('dessert')">&#127856; קינוחים</button>
+                <button class="filter-btn" onclick="filterMenu('special')">&#11088; ספיישל</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Items will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&#11088; מה אומרים עלינו</span>
+                <h2 class="section-title">הלקוחות שלנו מספרים</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <p class="testimonial-text">"האוכל של חני הוא פשוט משהו אחר! הטעם מחזיר אותי לסבתא. כל שבוע אני מזמינה ואף פעם לא מתאכזבת."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">&#128105;</div>
+                        <div>
+                            <strong>מיכל כהן</strong>
+                            <span>לקוחה קבועה</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <p class="testimonial-text">"מאז שגילינו את המטבח של חני, הפסקנו לבשל בבית! המנות תמיד טריות, טעימות ובכמויות נדיבות."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">&#128104;</div>
+                        <div>
+                            <strong>דוד לוי</strong>
+                            <span>לקוח מרוצה</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                    <p class="testimonial-text">"הזמנתי לאירוע משפחתי וכולם היו בשוק! שאלו אותי מאיפה האוכל המטורף הזה. ממליצה בחום!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">&#128105;</div>
+                        <div>
+                            <strong>שירה אברהם</strong>
+                            <span>הזמינה לאירוע</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&#128222; צרו קשר</span>
+                <h2 class="section-title">רוצים לדבר? אנחנו כאן!</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">&#128222;</div>
+                    <h3>טלפון</h3>
+                    <p>050-1234567</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#128231;</div>
+                    <h3>אימייל</h3>
+                    <p>info@hani-kitchen.co.il</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#128205;</div>
+                    <h3>כתובת</h3>
+                    <p>רחוב הבישול 12, תל אביב</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#128338;</div>
+                    <h3>שעות פעילות</h3>
+                    <p>א'-ה' 8:00-20:00<br>ו' 8:00-14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&#127869;</span>
+                    <span class="logo-text">המטבח של חני</span>
+                    <p>אוכל ביתי מוכן באהבה. כל מנה היא חוויה.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">בית</a>
+                    <a href="#about">עלינו</a>
+                    <a href="#menu">תפריט</a>
+                    <a href="#contact">צרו קשר</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 המטבח של חני. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>&#128722; סל הקניות</h2>
+            <button class="cart-close" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <span class="cart-empty-icon">&#128722;</span>
+                <p>הסל ריק</p>
+                <span>הוסיפו מנות טעימות מהתפריט!</span>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>סה"כ:</span>
+                <span id="cartTotal">&#8362;0</span>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="openCheckout()">&#128176; לתשלום</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>&#128230; השלמת הזמנה</h2>
+                <button class="modal-close" onclick="closeCheckout()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Step Indicators -->
+                <div class="checkout-steps">
+                    <div class="step active" id="step1Indicator">
+                        <div class="step-number">1</div>
+                        <span>סיכום</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" id="step2Indicator">
+                        <div class="step-number">2</div>
+                        <span>פרטים</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" id="step3Indicator">
+                        <div class="step-number">3</div>
+                        <span>אישור</span>
+                    </div>
+                </div>
+
+                <!-- Step 1: Order Summary -->
+                <div class="checkout-step" id="checkoutStep1">
+                    <h3>&#128203; סיכום ההזמנה שלך</h3>
+                    <div class="order-summary" id="orderSummary"></div>
+                    <div class="order-total-section">
+                        <div class="order-subtotal">
+                            <span>סכום ביניים:</span>
+                            <span id="orderSubtotal">&#8362;0</span>
+                        </div>
+                        <div class="delivery-option-checkout">
+                            <label class="delivery-label">
+                                <input type="radio" name="deliveryType" value="delivery" checked onchange="updateDeliveryFee()">
+                                <span class="delivery-radio-custom"></span>
+                                <span>&#128666; משלוח עד הבית - &#8362;25</span>
+                            </label>
+                            <label class="delivery-label">
+                                <input type="radio" name="deliveryType" value="pickup" onchange="updateDeliveryFee()">
+                                <span class="delivery-radio-custom"></span>
+                                <span>&#127968; איסוף עצמי - חינם!</span>
+                            </label>
+                        </div>
+                        <div class="order-delivery-fee" id="deliveryFeeRow">
+                            <span>דמי משלוח:</span>
+                            <span id="deliveryFee">&#8362;25</span>
+                        </div>
+                        <div class="order-total-final">
+                            <span>סה"כ לתשלום:</span>
+                            <span id="orderTotalFinal">&#8362;0</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="goToStep(2)">המשך לפרטים &#8592;</button>
+                </div>
+
+                <!-- Step 2: Customer Details -->
+                <div class="checkout-step" id="checkoutStep2" style="display:none;">
+                    <h3>&#128100; פרטים אישיים</h3>
+                    <form id="orderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">שם פרטי *</label>
+                                <input type="text" id="firstName" required placeholder="הכניסו שם פרטי">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">שם משפחה *</label>
+                                <input type="text" id="lastName" required placeholder="הכניסו שם משפחה">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">טלפון *</label>
+                                <input type="tel" id="phone" required placeholder="050-1234567">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">אימייל</label>
+                                <input type="email" id="email" placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <!-- Delivery Address (shown only for delivery) -->
+                        <div id="deliveryAddressSection">
+                            <h4>&#128205; כתובת למשלוח</h4>
+                            <div class="form-group">
+                                <label for="street">רחוב ומספר בית *</label>
+                                <input type="text" id="street" placeholder="רחוב הרצל 15">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">עיר *</label>
+                                    <input type="text" id="city" placeholder="תל אביב">
+                                </div>
+                                <div class="form-group">
+                                    <label for="apartment">דירה / קומה</label>
+                                    <input type="text" id="apartment" placeholder="דירה 5, קומה 3">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="deliveryNotes">הערות למשלוח</label>
+                                <textarea id="deliveryNotes" placeholder="הערות מיוחדות, קוד כניסה לבניין..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Pickup Info (shown only for pickup) -->
+                        <div id="pickupSection" style="display:none;">
+                            <div class="pickup-info">
+                                <div class="pickup-icon">&#127968;</div>
+                                <h4>נקודת איסוף</h4>
+                                <p>רחוב הבישול 12, תל אביב</p>
+                                <p>שעות איסוף: א'-ה' 10:00-20:00 | ו' 8:00-14:00</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="pickupTime">שעת איסוף מועדפת</label>
+                                <select id="pickupTime">
+                                    <option value="">בחרו שעה</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderNotes">הערות להזמנה</label>
+                            <textarea id="orderNotes" placeholder="אלרגיות, בקשות מיוחדות, העדפות..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="paymentMethod">אמצעי תשלום</label>
+                            <select id="paymentMethod">
+                                <option value="cash">&#128181; מזומן בעת קבלה / איסוף</option>
+                                <option value="bit">&#128241; ביט</option>
+                                <option value="paybox">&#128241; פייבוקס</option>
+                                <option value="transfer">&#127975; העברה בנקאית</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" onclick="goToStep(1)">&#8594; חזרה</button>
+                            <button type="button" class="btn btn-primary" onclick="goToStep(3)">אישור הזמנה &#8592;</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Step 3: Confirmation -->
+                <div class="checkout-step" id="checkoutStep3" style="display:none;">
+                    <div class="confirmation-content">
+                        <div class="confirmation-icon">&#127881;</div>
+                        <h3>ההזמנה התקבלה בהצלחה!</h3>
+                        <p class="confirmation-number">מספר הזמנה: <strong id="orderNumber">#0000</strong></p>
+                        <div class="confirmation-details" id="confirmationDetails"></div>
+                        <p class="confirmation-message">נעדכן אותך ב-SMS כשההזמנה תהיה מוכנה!</p>
+                        <div class="confirmation-contact">
+                            <p>שאלות? דברו איתנו:</p>
+                            <a href="tel:0501234567" class="btn btn-primary">&#128222; 050-1234567</a>
+                        </div>
+                        <button class="btn btn-outline" onclick="closeCheckout(); location.reload();">חזרה לתפריט</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">&#10004;</span>
+        <span class="toast-message" id="toastMessage">נוסף לסל!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
