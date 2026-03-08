@@ -1729,11 +1729,11 @@ body {
 
     .hero {
         padding-top: 100px;
-        padding-bottom: 40px;
+        padding-bottom: 70px;
     }
 
     .hero-scroll-indicator {
-        display: none;
+        bottom: 12px;
     }
 
     .hero-content {
