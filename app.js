@@ -123,6 +123,18 @@ const menuItems = [
         gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
         badge: "חם וטעים",
         unit: "מנה"
+    },
+    {
+        id: 11,
+        name: "עוגת תפוזים אוורירית",
+        description: "עוגת תפוזים קלילה ואוורירית עם מיץ תפוזים סחוט טרי וקליפת תפוז מגוררת. נמסה בפה!",
+        price: 45,
+        category: "dessert",
+        categoryLabel: "קינוח",
+        emoji: "🍊",
+        gradient: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
+        badge: "הכי אהוב",
+        unit: "יחידה"
     }
 ];
 
