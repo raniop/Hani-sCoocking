@@ -99,6 +99,18 @@ const menuItems = [
         gradient: "linear-gradient(135deg, #fdcb6e 0%, #e17055 100%)",
         badge: "מומלץ",
         unit: "מנה"
+    },
+    {
+        id: 9,
+        name: "קומפוט",
+        description: "קומפוט פירות ביתי מתוק ומפנק, מבושל לאט עם פירות העונה, קינמון ורמז של לימון. קינוח מושלם.",
+        price: 30,
+        category: "dessert",
+        categoryLabel: "קינוח",
+        emoji: "🍑",
+        gradient: "linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)",
+        badge: "חדש!",
+        unit: "מנה"
     }
 ];
 
