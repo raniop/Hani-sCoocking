@@ -1714,6 +1714,43 @@ body {
         display: flex;
     }
 
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+        padding: 6px 18px;
+        margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .logo-icon {
+        font-size: 26px;
+    }
+
+    .cart-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
     .hero-stats {
         flex-direction: column;
         gap: 16px;
@@ -1725,7 +1762,8 @@ body {
     }
 
     .title-line {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        letter-spacing: -1px;
     }
 
     .menu-grid {
@@ -1790,17 +1828,26 @@ body {
 
 @media (max-width: 480px) {
     .title-line {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .hero {
+        padding-top: 90px;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
 
     .btn-lg {
         padding: 14px 28px;
         font-size: 15px;
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
     }
 
     .section-title {
@@ -1808,7 +1855,16 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .nav-container {
+        padding: 0 16px;
     }
 }
 
