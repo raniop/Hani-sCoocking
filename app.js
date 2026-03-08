@@ -135,6 +135,18 @@ const menuItems = [
         gradient: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
         badge: "הכי אהוב",
         unit: "יחידה"
+    },
+    {
+        id: 12,
+        name: "טירמיסו",
+        description: "טירמיסו איטלקי קלאסי עם שכבות של קרם מסקרפונה, ביסקוויטים ספוגים בקפה ואבקת קקאו. פינוק אמיתי!",
+        price: 40,
+        category: "dessert",
+        categoryLabel: "קינוח",
+        emoji: "🍰",
+        gradient: "linear-gradient(135deg, #3e2723 0%, #8d6e63 100%)",
+        badge: "פינוק",
+        unit: "מנה"
     }
 ];
 
