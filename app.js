@@ -7,11 +7,11 @@ const menuItems = [
     {
         id: 1,
         name: "גפילטע פיש",
-        description: "גפילטע פיש ביתי אמיתי, מוכן לפי המתכון המסורתי של סבתא. עדין, טעים ומושלם לכל ארוחה.",
+        description: "גפילטע פיש אמיתי, מוכן לפי המתכון המסורתי. עדין, טעים ומושלם לכל ארוחה.",
         price: 55,
         category: "main",
         categoryLabel: "מנה עיקרית",
-        emoji: "🐟",
+        emoji: "",
         gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         badge: "הכי נמכר",
         unit: "מנה"
@@ -19,11 +19,11 @@ const menuItems = [
     {
         id: 2,
         name: "קרעפלך",
-        description: "כיסוני בצק ממולאים בבשר טחון מתובל, מבושלים לשלמות. טעם של בית אמיתי בכל ביס.",
+        description: "כיסוני בצק ממולאים בבשר טחון מתובל, מבושלים לשלמות. טעם אותנטי בכל ביס.",
         price: 45,
         category: "main",
         categoryLabel: "מנה עיקרית",
-        emoji: "🥟",
+        emoji: "",
         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
         badge: "",
         unit: "מנה"
@@ -31,11 +31,11 @@ const menuItems = [
     {
         id: 3,
         name: "קניידלעך",
-        description: "כדורי מצה אוויריים ומושלמים, בדיוק כמו שסבתא הכינה. מתאימים למרק או כתוספת.",
+        description: "כדורי מצה אוויריים ומושלמים, לפי המתכון המסורתי. מתאימים למרק או כתוספת.",
         price: 40,
         category: "soup",
         categoryLabel: "מרק / תוספת",
-        emoji: "🍲",
+        emoji: "",
         gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
         badge: "קלאסי",
         unit: "מנה (6 יח')"
@@ -47,7 +47,7 @@ const menuItems = [
         price: 120,
         category: "main",
         categoryLabel: "מנה עיקרית",
-        emoji: "🍗",
+        emoji: "",
         gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
         badge: "פרימיום",
         unit: "יחידה"
@@ -59,7 +59,7 @@ const menuItems = [
         price: 65,
         category: "main",
         categoryLabel: "מנה עיקרית",
-        emoji: "🍆",
+        emoji: "",
         gradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
         badge: "",
         unit: "מנה"
@@ -71,7 +71,7 @@ const menuItems = [
         price: 50,
         category: "side",
         categoryLabel: "תוספת / מתאבן",
-        emoji: "🫕",
+        emoji: "",
         gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
         badge: "מסורתי",
         unit: "מנה"
@@ -83,7 +83,7 @@ const menuItems = [
         price: 35,
         category: "salad",
         categoryLabel: "סלט",
-        emoji: "🥗",
+        emoji: "",
         gradient: "linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)",
         badge: "",
         unit: "מנה"
@@ -95,7 +95,7 @@ const menuItems = [
         price: 40,
         category: "side",
         categoryLabel: "תוספת",
-        emoji: "🥕",
+        emoji: "",
         gradient: "linear-gradient(135deg, #fdcb6e 0%, #e17055 100%)",
         badge: "מומלץ",
         unit: "מנה"
@@ -103,11 +103,11 @@ const menuItems = [
     {
         id: 9,
         name: "קומפוט",
-        description: "קומפוט פירות ביתי מתוק ומפנק, מבושל לאט עם פירות העונה, קינמון ורמז של לימון. קינוח מושלם.",
+        description: "קומפוט פירות מתוק ומפנק, מבושל לאט עם פירות העונה, קינמון ורמז של לימון. קינוח מושלם.",
         price: 30,
         category: "dessert",
         categoryLabel: "קינוח",
-        emoji: "🍑",
+        emoji: "",
         gradient: "linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)",
         badge: "חדש!",
         unit: "מנה"
@@ -115,11 +115,11 @@ const menuItems = [
     {
         id: 10,
         name: "מרק עוף",
-        description: "מרק עוף ביתי זהוב ושקוף, מבושל לאט עם ירקות טריים, שמיר ושקדי מרק. מחמם את הנשמה.",
+        description: "מרק עוף זהוב ושקוף, מבושל לאט עם ירקות טריים, שמיר ושקדי מרק. מחמם את הנשמה.",
         price: 35,
         category: "soup",
         categoryLabel: "מרק",
-        emoji: "🍜",
+        emoji: "",
         gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
         badge: "חם וטעים",
         unit: "מנה"
@@ -131,7 +131,7 @@ const menuItems = [
         price: 45,
         category: "dessert",
         categoryLabel: "קינוח",
-        emoji: "🍊",
+        emoji: "",
         gradient: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
         badge: "הכי אהוב",
         unit: "יחידה"
@@ -143,7 +143,7 @@ const menuItems = [
         price: 40,
         category: "dessert",
         categoryLabel: "קינוח",
-        emoji: "🍰",
+        emoji: "",
         gradient: "linear-gradient(135deg, #3e2723 0%, #8d6e63 100%)",
         badge: "פינוק",
         unit: "מנה"
@@ -151,14 +151,50 @@ const menuItems = [
     {
         id: 13,
         name: "חמין",
-        description: "חמין ביתי אמיתי עם בשר, תפוחי אדמה, שעועית, ביצים וקוגל. מבושל לאט כל הלילה כמו של סבתא.",
+        description: "חמין מסורתי אמיתי עם בשר, תפוחי אדמה, שעועית, ביצים וקוגל. מבושל לאט כל הלילה.",
         price: 80,
         category: "main",
         categoryLabel: "מנה עיקרית",
-        emoji: "🍲",
+        emoji: "",
         gradient: "linear-gradient(135deg, #5d4037 0%, #a1887f 100%)",
         badge: "קלאסי",
         unit: "מנה"
+    },
+    {
+        id: 14,
+        name: "פלפל ממולא",
+        description: "פלפלים ממולאים בבשר ואורז, מבושלים ברוטב עגבניות עשיר. מנה מסורתית קלאסית.",
+        price: 60,
+        category: "main",
+        categoryLabel: "מנה עיקרית",
+        emoji: "",
+        gradient: "linear-gradient(135deg, #e74c3c 0%, #f39c12 100%)",
+        badge: "חדש!",
+        unit: "מנה"
+    },
+    {
+        id: 15,
+        name: "כרוב ממולא",
+        description: "עלי כרוב ממולאים בבשר ואורז, מבושלים ברוטב חמוץ-מתוק. טעם שמחזיר לשורשים.",
+        price: 60,
+        category: "main",
+        categoryLabel: "מנה עיקרית",
+        emoji: "",
+        gradient: "linear-gradient(135deg, #27ae60 0%, #2ecc71 100%)",
+        badge: "חדש!",
+        unit: "מנה"
+    },
+    {
+        id: 16,
+        name: "עוגת שוקולד",
+        description: "עוגת שוקולד עשירה ונימוחה, אפויה מקקאו איכותי עם ציפוי שוקולד מבריק. פינוק של ממש.",
+        price: 50,
+        category: "dessert",
+        categoryLabel: "קינוח",
+        emoji: "",
+        gradient: "linear-gradient(135deg, #3e2723 0%, #4e342e 100%)",
+        badge: "חדש!",
+        unit: "יחידה"
     }
 ];
 
@@ -192,7 +228,7 @@ function renderMenu(items) {
             <div class="menu-card-image">
                 <div class="food-gradient" style="background: ${item.gradient};"></div>
                 ${item.badge ? `<span class="menu-card-badge">${item.badge}</span>` : ''}
-                <span class="food-emoji">${item.emoji}</span>
+                <span class="food-emoji">${item.name.charAt(0)}</span>
             </div>
             <div class="menu-card-content">
                 <div class="menu-card-category">${item.categoryLabel}</div>
@@ -288,7 +324,7 @@ function updateCartUI() {
     if (cart.length === 0) {
         cartItems.innerHTML = `
             <div class="cart-empty">
-                <span class="cart-empty-icon">&#128722;</span>
+                <span class="cart-empty-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
                 <p>הסל ריק</p>
                 <span>הוסיפו מנות טעימות מהתפריט!</span>
             </div>
@@ -303,7 +339,7 @@ function updateCartUI() {
     cartItems.innerHTML = cart.map(item => `
         <div class="cart-item">
             <div class="cart-item-emoji" style="background: ${item.gradient};">
-                ${item.emoji}
+                ${item.name.charAt(0)}
             </div>
             <div class="cart-item-info">
                 <div class="cart-item-name">${item.name}</div>
@@ -314,7 +350,7 @@ function updateCartUI() {
                     <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
                 </div>
             </div>
-            <button class="cart-item-remove" onclick="removeFromCart(${item.id})" title="הסר">&#128465;</button>
+            <button class="cart-item-remove" onclick="removeFromCart(${item.id})" title="הסר">&times;</button>
         </div>
     `).join('');
 }
@@ -397,7 +433,7 @@ function goToStep(step) {
         summary.innerHTML = cart.map(item => `
             <div class="order-summary-item">
                 <div class="order-summary-item-info">
-                    <span class="order-summary-item-emoji">${item.emoji}</span>
+                    <span class="order-summary-item-emoji">${item.name.charAt(0)}</span>
                     <div>
                         <div class="order-summary-item-name">${item.name}</div>
                         <div class="order-summary-item-qty">כמות: ${item.qty}</div>
@@ -616,12 +652,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // =====================================================
 function initParticles() {
     const container = document.getElementById('particles');
-    const emojis = ['🍽️', '🥘', '🍲', '🥗', '🍗', '🥕', '🧅', '🌿', '⭐', '❤️', '🍴', '🥄'];
+    const shapes = ['+', '·', '○', '◇', '—', '∙'];
 
     for (let i = 0; i < 15; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
-        particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        particle.textContent = shapes[Math.floor(Math.random() * shapes.length)];
         particle.style.left = `${Math.random() * 100}%`;
         particle.style.animationDelay = `${Math.random() * 20}s`;
         particle.style.animationDuration = `${15 + Math.random() * 15}s`;
