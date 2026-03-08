@@ -320,6 +320,28 @@ body {
     padding: 0 24px;
 }
 
+/* Hero-specific button overrides for warm background */
+.hero .btn-primary {
+    background: white;
+    color: #5a2d0c;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn-primary:hover {
+    background: #fff8f0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero .btn-outline {
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+}
+
+.hero .btn-outline:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: white;
+}
+
 .hero-badge {
     display: inline-block;
     background: rgba(255, 255, 255, 0.15);
