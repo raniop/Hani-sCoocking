@@ -147,6 +147,18 @@ const menuItems = [
         gradient: "linear-gradient(135deg, #3e2723 0%, #8d6e63 100%)",
         badge: "פינוק",
         unit: "מנה"
+    },
+    {
+        id: 13,
+        name: "חמין",
+        description: "חמין ביתי אמיתי עם בשר, תפוחי אדמה, שעועית, ביצים וקוגל. מבושל לאט כל הלילה כמו של סבתא.",
+        price: 80,
+        category: "main",
+        categoryLabel: "מנה עיקרית",
+        emoji: "🍲",
+        gradient: "linear-gradient(135deg, #5d4037 0%, #a1887f 100%)",
+        badge: "קלאסי",
+        unit: "מנה"
     }
 ];
 
